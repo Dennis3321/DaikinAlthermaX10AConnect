@@ -28,7 +28,7 @@ This is an ESPHome-based integration for Daikin Altherma heat pumps, specificall
 ## Project Structure
 
 ```
-ESPHomePoeAlterma/
+DaikinAlthermaX10AConnect/
 ├── components/
 │   └── daikin_x10a/           # Custom ESPHome component
 │       ├── daikin_x10a.cpp    # Main component: UART communication, register
@@ -39,19 +39,19 @@ ESPHomePoeAlterma/
 │       ├── register_definitions.h    # Register struct + scan interval constant
 │       ├── __init__.py        # ESPHome Python codegen (sensor auto-creation)
 │       └── manifest.json
-├── m5poe.yaml                 # ESPHome configuration (hardware + registers)
+├── daikin-x10a.yaml                 # ESPHome configuration (hardware + registers)
 └── README.md                  # Detailed documentation
 ```
 
 ### Configuration
 
-**`m5poe.yaml`** is the single configuration file containing:
+**`daikin-x10a.yaml`** is the single configuration file containing:
 - Hardware setup (UART, I2C, Ethernet, relays)
 - daikin_x10a component initialization with full register list
 - Mode and smart grid controls (template selects)
 - Debug mode switch
 
-**Register configuration example (in m5poe.yaml):**
+**Register configuration example (in daikin-x10a.yaml):**
 ```yaml
 daikin_x10a:
   id: daikin_comp
@@ -74,7 +74,7 @@ Heat Pump X10A Protocol
          ↓
 [daikin_x10a component reads via UART]
          ↓
-registers: array in m5poe.yaml
+registers: array in daikin-x10a.yaml
   - { mode: 0, label: "..." }  ← Read but not exposed to HA
   - { mode: 1, label: "DHW tank temp. (R5T)" }  ← AUTO-CREATES SENSOR
          ↓
@@ -84,7 +84,7 @@ registers: array in m5poe.yaml
 ## Development Guidelines
 
 ### ESPHome Configuration
-- Config: `m5poe.yaml` (hardware setup, register definitions, controls)
+- Config: `daikin-x10a.yaml` (hardware setup, register definitions, controls)
 - Uses external_components to pull from this GitHub repository
 - Requires secrets file for API encryption key and OTA password
 
@@ -188,7 +188,7 @@ When modifying the custom component:
 ### Adding New Sensors
 To make a new sensor visible in Home Assistant, simply set `mode: 1` in the register definition:
 
-**Example in m5poe.yaml:**
+**Example in daikin-x10a.yaml:**
 ```yaml
 daikin_x10a:
   uart_id: daikin_uart
@@ -216,7 +216,7 @@ daikin_x10a:
 3. Can use local path instead of GitHub URL for testing
 
 ### Modifying Register Configuration
-1. Edit the `registers:` array in `m5poe.yaml`
+1. Edit the `registers:` array in `daikin-x10a.yaml`
 2. Register fields:
    - `mode`: **0** (read but don't show in HA) or **1** (read AND auto-create sensor in HA)
    - `registryID`: X10A register address (e.g., 0x61)
@@ -233,10 +233,10 @@ The component has a runtime debug mode controlled via a Home Assistant switch ("
 - **On:** Enables all `ESP_LOGI` logging in `FetchRegisters()`, `process_frame_()`, and `convert_registry_values_()` (TX/RX packets, registry decoding, conversion details, CRC errors, etc.)
 - Startup logs (sensor registration) always appear regardless of debug mode
 - Implemented via `debug_mode_` bool in `DaikinX10A` class, toggled by `set_debug_mode(bool)`
-- Switch defined in `m5poe.yaml` as a template switch with `restore_mode: RESTORE_DEFAULT_OFF`
+- Switch defined in `daikin-x10a.yaml` as a template switch with `restore_mode: RESTORE_DEFAULT_OFF`
 
 ### Debugging UART Communication (low-level)
-Uncomment debug section in `m5poe.yaml` for raw UART byte logging:
+Uncomment debug section in `daikin-x10a.yaml` for raw UART byte logging:
 ```yaml
 #debug:
 #  direction: BOTH

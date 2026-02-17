@@ -42,7 +42,7 @@ uart:
 external_components:
   - source:
       type: git
-      url: https://github.com/Dennis3321/ESPHomePoeAlterma
+      url: https://github.com/Dennis3321/DaikinAlthermaX10AConnect
       ref: main
       path: components
     components: [ daikin_x10a ]
