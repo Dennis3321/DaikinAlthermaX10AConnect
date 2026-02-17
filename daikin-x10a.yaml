@@ -160,222 +160,222 @@ daikin_x10a:
   uart_id: daikin_uart
   mode: 1
   registers:
-    - { mode: 1, registryID: 0x00, offset: 0, ConversionID: 802, dataSize: 0, dataType: -1, label: "*Refrigerant type" }
-    - { mode: 1, registryID: 0x00, offset: 0, ConversionID: 152, dataSize: 1, dataType: -1, label: "Sensor Data Qty" }
-    - { mode: 1, registryID: 0x00, offset: 1, ConversionID: 152, dataSize: 1, dataType: -1, label: "INV compressor Qty" }
-    - { mode: 1, registryID: 0x00, offset: 2, ConversionID: 152, dataSize: 1, dataType: -1, label: "STD compressor Qty" }
-    - { mode: 1, registryID: 0x00, offset: 3, ConversionID: 152, dataSize: 1, dataType: -1, label: "Fan Data Qty" }
-    - { mode: 1, registryID: 0x00, offset: 4, ConversionID: 152, dataSize: 1, dataType: -1, label: "Expansion Valve Data Qty" }
-    - { mode: 1, registryID: 0x00, offset: 5, ConversionID: 152, dataSize: 1, dataType: -1, label: "4 Way Valve Data Qty" }
-    - { mode: 1, registryID: 0x00, offset: 6, ConversionID: 152, dataSize: 1, dataType: -1, label: "Crank Case Heater Qty" }
-    - { mode: 1, registryID: 0x00, offset: 7, ConversionID: 152, dataSize: 1, dataType: -1, label: "Solenoid valve Qty" }
-    - { mode: 1, registryID: 0x00, offset: 8, ConversionID: 152, dataSize: 1, dataType: -1, label: "Max. connectable indoor units" }
-    - { mode: 1, registryID: 0x00, offset: 9, ConversionID: 152, dataSize: 1, dataType: -1, label: "Connected Indoor Unit Qty" }
-    - { mode: 1, registryID: 0x00, offset: 10, ConversionID: 152, dataSize: 1, dataType: -1, label: "O/U MPU ID (xx)" }
-    - { mode: 1, registryID: 0x00, offset: 11, ConversionID: 152, dataSize: 1, dataType: -1, label: "O/U MPU ID (yy)" }
-    - { mode: 1, registryID: 0x00, offset: 12, ConversionID: 105, dataSize: 1, dataType: -1, label: "O/U capacity (kW)" }
+    - { mode: 0, registryID: 0x00, offset: 0, ConversionID: 802, dataSize: 0, dataType: -1, label: "*Refrigerant type" }
+    - { mode: 0, registryID: 0x00, offset: 0, ConversionID: 152, dataSize: 1, dataType: -1, label: "Sensor Data Qty" }
+    - { mode: 0, registryID: 0x00, offset: 1, ConversionID: 152, dataSize: 1, dataType: -1, label: "INV compressor Qty" }
+    - { mode: 0, registryID: 0x00, offset: 2, ConversionID: 152, dataSize: 1, dataType: -1, label: "STD compressor Qty" }
+    - { mode: 0, registryID: 0x00, offset: 3, ConversionID: 152, dataSize: 1, dataType: -1, label: "Fan Data Qty" }
+    - { mode: 0, registryID: 0x00, offset: 4, ConversionID: 152, dataSize: 1, dataType: -1, label: "Expansion Valve Data Qty" }
+    - { mode: 0, registryID: 0x00, offset: 5, ConversionID: 152, dataSize: 1, dataType: -1, label: "4 Way Valve Data Qty" }
+    - { mode: 0, registryID: 0x00, offset: 6, ConversionID: 152, dataSize: 1, dataType: -1, label: "Crank Case Heater Qty" }
+    - { mode: 0, registryID: 0x00, offset: 7, ConversionID: 152, dataSize: 1, dataType: -1, label: "Solenoid valve Qty" }
+    - { mode: 0, registryID: 0x00, offset: 8, ConversionID: 152, dataSize: 1, dataType: -1, label: "Max. connectable indoor units" }
+    - { mode: 0, registryID: 0x00, offset: 9, ConversionID: 152, dataSize: 1, dataType: -1, label: "Connected Indoor Unit Qty" }
+    - { mode: 0, registryID: 0x00, offset: 10, ConversionID: 152, dataSize: 1, dataType: -1, label: "O/U MPU ID (xx)" }
+    - { mode: 0, registryID: 0x00, offset: 11, ConversionID: 152, dataSize: 1, dataType: -1, label: "O/U MPU ID (yy)" }
+    - { mode: 0, registryID: 0x00, offset: 12, ConversionID: 105, dataSize: 1, dataType: -1, label: "O/U capacity (kW)" }
     - { mode: 1, registryID: 0x10, offset: 0, ConversionID: 217, dataSize: 1, dataType: -1, label: "Operation Mode" }
-    - { mode: 1, registryID: 0x10, offset: 1, ConversionID: 307, dataSize: 1, dataType: -1, label: "Thermostat ON/OFF" }
-    - { mode: 1, registryID: 0x10, offset: 1, ConversionID: 306, dataSize: 1, dataType: -1, label: "Restart standby" }
-    - { mode: 1, registryID: 0x10, offset: 1, ConversionID: 305, dataSize: 1, dataType: -1, label: "Startup Control" }
+    - { mode: 0, registryID: 0x10, offset: 1, ConversionID: 307, dataSize: 1, dataType: -1, label: "Thermostat ON/OFF" }
+    - { mode: 0, registryID: 0x10, offset: 1, ConversionID: 306, dataSize: 1, dataType: -1, label: "Restart standby" }
+    - { mode: 0, registryID: 0x10, offset: 1, ConversionID: 305, dataSize: 1, dataType: -1, label: "Startup Control" }
     - { mode: 1, registryID: 0x10, offset: 1, ConversionID: 304, dataSize: 1, dataType: -1, label: "Defrost Operation" }
-    - { mode: 1, registryID: 0x10, offset: 1, ConversionID: 303, dataSize: 1, dataType: -1, label: "Oil Return Operation" }
-    - { mode: 1, registryID: 0x10, offset: 1, ConversionID: 302, dataSize: 1, dataType: -1, label: "Pressure equalizing operation" }
-    - { mode: 1, registryID: 0x10, offset: 1, ConversionID: 301, dataSize: 1, dataType: -1, label: "Demand Signal" }
-    - { mode: 1, registryID: 0x10, offset: 1, ConversionID: 300, dataSize: 1, dataType: -1, label: "Low noise control" }
-    - { mode: 1, registryID: 0x10, offset: 4, ConversionID: 203, dataSize: 1, dataType: -1, label: "Error type" }
-    - { mode: 1, registryID: 0x10, offset: 5, ConversionID: 204, dataSize: 1, dataType: -1, label: "Error Code" }
-    - { mode: 1, registryID: 0x10, offset: 6, ConversionID: 114, dataSize: 2, dataType: 1, label: "Target Evap. Temp." }
-    - { mode: 1, registryID: 0x10, offset: 8, ConversionID: 114, dataSize: 2, dataType: 1, label: "Target Cond. Temp." }
-    - { mode: 1, registryID: 0x10, offset: 10, ConversionID: 307, dataSize: 1, dataType: -1, label: "Discharge Temp. Drop" }
-    - { mode: 1, registryID: 0x10, offset: 10, ConversionID: 310, dataSize: 1, dataType: -1, label: "Discharge Temp. Protection Retry Qty" }
-    - { mode: 1, registryID: 0x10, offset: 10, ConversionID: 303, dataSize: 1, dataType: -1, label: "Comp. INV Current Drop" }
-    - { mode: 1, registryID: 0x10, offset: 10, ConversionID: 311, dataSize: 1, dataType: -1, label: "Comp. INV Current Protection Retry Qty" }
-    - { mode: 1, registryID: 0x10, offset: 11, ConversionID: 307, dataSize: 1, dataType: -1, label: "HP Drop Control" }
-    - { mode: 1, registryID: 0x10, offset: 11, ConversionID: 310, dataSize: 1, dataType: -1, label: "HP Protection Retry Qty" }
-    - { mode: 1, registryID: 0x10, offset: 11, ConversionID: 303, dataSize: 1, dataType: -1, label: "LP Drop Control" }
-    - { mode: 1, registryID: 0x10, offset: 11, ConversionID: 311, dataSize: 1, dataType: -1, label: "LP Protection Retry Qty" }
-    - { mode: 1, registryID: 0x10, offset: 12, ConversionID: 307, dataSize: 1, dataType: -1, label: "Fin Temp. Drop Control" }
-    - { mode: 1, registryID: 0x10, offset: 12, ConversionID: 310, dataSize: 1, dataType: -1, label: "Fin Temp. Protection Retry Qty" }
-    - { mode: 1, registryID: 0x10, offset: 12, ConversionID: 303, dataSize: 1, dataType: -1, label: "Other Drop Control" }
-    - { mode: 1, registryID: 0x10, offset: 12, ConversionID: 311, dataSize: 1, dataType: -1, label: "Not in use (0x10 o12)" }
-    - { mode: 1, registryID: 0x11, offset: 0, ConversionID: 215, dataSize: 1, dataType: -1, label: "O/U EEPROM (1st digit)" }
-    - { mode: 1, registryID: 0x11, offset: 1, ConversionID: 215, dataSize: 1, dataType: -1, label: "O/U EEPROM (3rd 4th digit)" }
-    - { mode: 1, registryID: 0x11, offset: 2, ConversionID: 215, dataSize: 1, dataType: -1, label: "O/U EEPROM (5th 6th digit)" }
-    - { mode: 1, registryID: 0x11, offset: 3, ConversionID: 215, dataSize: 1, dataType: -1, label: "O/U EEPROM (7th 8th digit)" }
-    - { mode: 1, registryID: 0x11, offset: 4, ConversionID: 215, dataSize: 1, dataType: -1, label: "O/U EEPROM (10th digit)" }
-    - { mode: 1, registryID: 0x11, offset: 5, ConversionID: 214, dataSize: 1, dataType: -1, label: "O/U EEPROM (11th digit)" }
-    - { mode: 1, registryID: 0x00, offset: 0, ConversionID: 995, dataSize: 1, dataType: -1, label: "NextDataGrid 1" }
+    - { mode: 0, registryID: 0x10, offset: 1, ConversionID: 303, dataSize: 1, dataType: -1, label: "Oil Return Operation" }
+    - { mode: 0, registryID: 0x10, offset: 1, ConversionID: 302, dataSize: 1, dataType: -1, label: "Pressure equalizing operation" }
+    - { mode: 0, registryID: 0x10, offset: 1, ConversionID: 301, dataSize: 1, dataType: -1, label: "Demand Signal" }
+    - { mode: 0, registryID: 0x10, offset: 1, ConversionID: 300, dataSize: 1, dataType: -1, label: "Low noise control" }
+    - { mode: 0, registryID: 0x10, offset: 4, ConversionID: 203, dataSize: 1, dataType: -1, label: "Error type" }
+    - { mode: 0, registryID: 0x10, offset: 5, ConversionID: 204, dataSize: 1, dataType: -1, label: "Error Code" }
+    - { mode: 0, registryID: 0x10, offset: 6, ConversionID: 114, dataSize: 2, dataType: 1, label: "Target Evap. Temp." }
+    - { mode: 0, registryID: 0x10, offset: 8, ConversionID: 114, dataSize: 2, dataType: 1, label: "Target Cond. Temp." }
+    - { mode: 0, registryID: 0x10, offset: 10, ConversionID: 307, dataSize: 1, dataType: -1, label: "Discharge Temp. Drop" }
+    - { mode: 0, registryID: 0x10, offset: 10, ConversionID: 310, dataSize: 1, dataType: -1, label: "Discharge Temp. Protection Retry Qty" }
+    - { mode: 0, registryID: 0x10, offset: 10, ConversionID: 303, dataSize: 1, dataType: -1, label: "Comp. INV Current Drop" }
+    - { mode: 0, registryID: 0x10, offset: 10, ConversionID: 311, dataSize: 1, dataType: -1, label: "Comp. INV Current Protection Retry Qty" }
+    - { mode: 0, registryID: 0x10, offset: 11, ConversionID: 307, dataSize: 1, dataType: -1, label: "HP Drop Control" }
+    - { mode: 0, registryID: 0x10, offset: 11, ConversionID: 310, dataSize: 1, dataType: -1, label: "HP Protection Retry Qty" }
+    - { mode: 0, registryID: 0x10, offset: 11, ConversionID: 303, dataSize: 1, dataType: -1, label: "LP Drop Control" }
+    - { mode: 0, registryID: 0x10, offset: 11, ConversionID: 311, dataSize: 1, dataType: -1, label: "LP Protection Retry Qty" }
+    - { mode: 0, registryID: 0x10, offset: 12, ConversionID: 307, dataSize: 1, dataType: -1, label: "Fin Temp. Drop Control" }
+    - { mode: 0, registryID: 0x10, offset: 12, ConversionID: 310, dataSize: 1, dataType: -1, label: "Fin Temp. Protection Retry Qty" }
+    - { mode: 0, registryID: 0x10, offset: 12, ConversionID: 303, dataSize: 1, dataType: -1, label: "Other Drop Control" }
+    - { mode: 0, registryID: 0x10, offset: 12, ConversionID: 311, dataSize: 1, dataType: -1, label: "Not in use (0x10 o12)" }
+    - { mode: 0, registryID: 0x11, offset: 0, ConversionID: 215, dataSize: 1, dataType: -1, label: "O/U EEPROM (1st digit)" }
+    - { mode: 0, registryID: 0x11, offset: 1, ConversionID: 215, dataSize: 1, dataType: -1, label: "O/U EEPROM (3rd 4th digit)" }
+    - { mode: 0, registryID: 0x11, offset: 2, ConversionID: 215, dataSize: 1, dataType: -1, label: "O/U EEPROM (5th 6th digit)" }
+    - { mode: 0, registryID: 0x11, offset: 3, ConversionID: 215, dataSize: 1, dataType: -1, label: "O/U EEPROM (7th 8th digit)" }
+    - { mode: 0, registryID: 0x11, offset: 4, ConversionID: 215, dataSize: 1, dataType: -1, label: "O/U EEPROM (10th digit)" }
+    - { mode: 0, registryID: 0x11, offset: 5, ConversionID: 214, dataSize: 1, dataType: -1, label: "O/U EEPROM (11th digit)" }
+    - { mode: 0, registryID: 0x00, offset: 0, ConversionID: 995, dataSize: 1, dataType: -1, label: "NextDataGrid 1" }
     - { mode: 1, registryID: 0x20, offset: 0, ConversionID: 105, dataSize: 2, dataType: 1, label: "R1T-Outdoor air temp." }
-    - { mode: 1, registryID: 0x20, offset: 2, ConversionID: 105, dataSize: 2, dataType: 1, label: "O/U Heat Exch. Temp." }
+    - { mode: 0, registryID: 0x20, offset: 2, ConversionID: 105, dataSize: 2, dataType: 1, label: "O/U Heat Exch. Temp." }
     - { mode: 1, registryID: 0x20, offset: 4, ConversionID: 105, dataSize: 2, dataType: 1, label: "Discharge pipe temp." }
-    - { mode: 1, registryID: 0x20, offset: 6, ConversionID: 105, dataSize: 2, dataType: 1, label: "Suction pipe temp." }
+    - { mode: 0, registryID: 0x20, offset: 6, ConversionID: 105, dataSize: 2, dataType: 1, label: "Suction pipe temp." }
     - { mode: 1, registryID: 0x20, offset: 8, ConversionID: 105, dataSize: 2, dataType: 1, label: "Heat exchanger mid-temp." }
-    - { mode: 1, registryID: 0x20, offset: 10, ConversionID: 105, dataSize: 2, dataType: 1, label: "Liquid temperature(R3T)" }
-    - { mode: 1, registryID: 0x20, offset: 12, ConversionID: 105, dataSize: 2, dataType: 2, label: "High Pressure" }
-    - { mode: 1, registryID: 0x20, offset: 12, ConversionID: 405, dataSize: 2, dataType: 1, label: "High Pressure(T)" }
-    - { mode: 1, registryID: 0x20, offset: 14, ConversionID: 105, dataSize: 2, dataType: 2, label: "Low Pressure" }
-    - { mode: 1, registryID: 0x20, offset: 14, ConversionID: 405, dataSize: 2, dataType: 1, label: "Low Pressure(T)" }
-    - { mode: 1, registryID: 0x21, offset: 0, ConversionID: 105, dataSize: 2, dataType: 3, label: "INV primary current (A)" }
-    - { mode: 1, registryID: 0x21, offset: 2, ConversionID: 105, dataSize: 2, dataType: 3, label: "INV secondary current (A)" }
+    - { mode: 0, registryID: 0x20, offset: 10, ConversionID: 105, dataSize: 2, dataType: 1, label: "Liquid temperature(R3T)" }
+    - { mode: 0, registryID: 0x20, offset: 12, ConversionID: 105, dataSize: 2, dataType: 2, label: "High Pressure" }
+    - { mode: 0, registryID: 0x20, offset: 12, ConversionID: 405, dataSize: 2, dataType: 1, label: "High Pressure(T)" }
+    - { mode: 0, registryID: 0x20, offset: 14, ConversionID: 105, dataSize: 2, dataType: 2, label: "Low Pressure" }
+    - { mode: 0, registryID: 0x20, offset: 14, ConversionID: 405, dataSize: 2, dataType: 1, label: "Low Pressure(T)" }
+    - { mode: 0, registryID: 0x21, offset: 0, ConversionID: 105, dataSize: 2, dataType: 3, label: "INV primary current (A)" }
+    - { mode: 0, registryID: 0x21, offset: 2, ConversionID: 105, dataSize: 2, dataType: 3, label: "INV secondary current (A)" }
     - { mode: 1, registryID: 0x21, offset: 4, ConversionID: 105, dataSize: 2, dataType: 1, label: "INV fin temp." }
-    - { mode: 1, registryID: 0x21, offset: 6, ConversionID: 105, dataSize: 2, dataType: 1, label: "Fan1 Fin temp." }
-    - { mode: 1, registryID: 0x21, offset: 8, ConversionID: 105, dataSize: 2, dataType: 1, label: "Fan2 Fin temp." }
-    - { mode: 1, registryID: 0x21, offset: 10, ConversionID: 105, dataSize: 2, dataType: 1, label: "Compressor outlet temperature" }
-    - { mode: 1, registryID: 0x00, offset: 0, ConversionID: 995, dataSize: 1, dataType: -1, label: "NextDataGrid 2" }
-    - { mode: 1, registryID: 0x30, offset: 0, ConversionID: 152, dataSize: 1, dataType: -1, label: "INV frequency (rps)" }
+    - { mode: 0, registryID: 0x21, offset: 6, ConversionID: 105, dataSize: 2, dataType: 1, label: "Fan1 Fin temp." }
+    - { mode: 0, registryID: 0x21, offset: 8, ConversionID: 105, dataSize: 2, dataType: 1, label: "Fan2 Fin temp." }
+    - { mode: 0, registryID: 0x21, offset: 10, ConversionID: 105, dataSize: 2, dataType: 1, label: "Compressor outlet temperature" }
+    - { mode: 0, registryID: 0x00, offset: 0, ConversionID: 995, dataSize: 1, dataType: -1, label: "NextDataGrid 2" }
+    - { mode: 0, registryID: 0x30, offset: 0, ConversionID: 152, dataSize: 1, dataType: -1, label: "INV frequency (rps)" }
     - { mode: 1, registryID: 0x30, offset: 1, ConversionID: 211, dataSize: 1, dataType: -1, label: "Fan 1 (step)" }
     - { mode: 1, registryID: 0x30, offset: 2, ConversionID: 211, dataSize: 1, dataType: -1, label: "Fan 2 (step)" }
-    - { mode: 1, registryID: 0x30, offset: 3, ConversionID: 151, dataSize: 2, dataType: -1, label: "Expansion valve 1 (pls)" }
-    - { mode: 1, registryID: 0x30, offset: 5, ConversionID: 151, dataSize: 2, dataType: -1, label: "Expansion valve 2 (pls)" }
-    - { mode: 1, registryID: 0x30, offset: 7, ConversionID: 151, dataSize: 2, dataType: -1, label: "Expansion valve 3 (pls)" }
-    - { mode: 1, registryID: 0x30, offset: 9, ConversionID: 151, dataSize: 2, dataType: -1, label: "Expansion valve 4 (pls)" }
-    - { mode: 1, registryID: 0x30, offset: 11, ConversionID: 307, dataSize: 1, dataType: -1, label: "4 Way Valve" }
-    - { mode: 1, registryID: 0x30, offset: 12, ConversionID: 307, dataSize: 1, dataType: -1, label: "Crank case heater" }
-    - { mode: 1, registryID: 0x30, offset: 13, ConversionID: 307, dataSize: 1, dataType: -1, label: "Y1S" }
-    - { mode: 1, registryID: 0x30, offset: 13, ConversionID: 306, dataSize: 1, dataType: -1, label: "SV (drain pan heater)" }
-    - { mode: 1, registryID: 0x30, offset: 13, ConversionID: 305, dataSize: 1, dataType: -1, label: "Y3S" }
-    - { mode: 1, registryID: 0x00, offset: 0, ConversionID: 998, dataSize: 1, dataType: -1, label: "In-Out separator" }
-    - { mode: 1, registryID: 0xA0, offset: 0, ConversionID: 119, dataSize: 2, dataType: 1, label: "Suction temp" }
+    - { mode: 0, registryID: 0x30, offset: 3, ConversionID: 151, dataSize: 2, dataType: -1, label: "Expansion valve 1 (pls)" }
+    - { mode: 0, registryID: 0x30, offset: 5, ConversionID: 151, dataSize: 2, dataType: -1, label: "Expansion valve 2 (pls)" }
+    - { mode: 0, registryID: 0x30, offset: 7, ConversionID: 151, dataSize: 2, dataType: -1, label: "Expansion valve 3 (pls)" }
+    - { mode: 0, registryID: 0x30, offset: 9, ConversionID: 151, dataSize: 2, dataType: -1, label: "Expansion valve 4 (pls)" }
+    - { mode: 0, registryID: 0x30, offset: 11, ConversionID: 307, dataSize: 1, dataType: -1, label: "4 Way Valve" }
+    - { mode: 0, registryID: 0x30, offset: 12, ConversionID: 307, dataSize: 1, dataType: -1, label: "Crank case heater" }
+    - { mode: 0, registryID: 0x30, offset: 13, ConversionID: 307, dataSize: 1, dataType: -1, label: "Y1S" }
+    - { mode: 0, registryID: 0x30, offset: 13, ConversionID: 306, dataSize: 1, dataType: -1, label: "SV (drain pan heater)" }
+    - { mode: 0, registryID: 0x30, offset: 13, ConversionID: 305, dataSize: 1, dataType: -1, label: "Y3S" }
+    - { mode: 0, registryID: 0x00, offset: 0, ConversionID: 998, dataSize: 1, dataType: -1, label: "In-Out separator" }
+    - { mode: 0, registryID: 0xA0, offset: 0, ConversionID: 119, dataSize: 2, dataType: 1, label: "Suction temp" }
     - { mode: 1, registryID: 0xA0, offset: 2, ConversionID: 119, dataSize: 2, dataType: 1, label: "Outdoor heat exchanger temp." }
-    - { mode: 1, registryID: 0xA0, offset: 4, ConversionID: 119, dataSize: 2, dataType: 1, label: "Liquid pipe temp." }
-    - { mode: 1, registryID: 0xA0, offset: 6, ConversionID: 119, dataSize: 2, dataType: 2, label: "Pressure" }
-    - { mode: 1, registryID: 0xA0, offset: 8, ConversionID: 151, dataSize: 2, dataType: -1, label: "Expansion valve 3 (pls) (I/U)" }
-    - { mode: 1, registryID: 0xA0, offset: 10, ConversionID: 152, dataSize: 1, dataType: -1, label: "O/U MPU ID (I/U 1)" }
-    - { mode: 1, registryID: 0xA0, offset: 11, ConversionID: 152, dataSize: 1, dataType: -1, label: "O/U MPU ID (I/U 2)" }
-    - { mode: 1, registryID: 0xA0, offset: 12, ConversionID: 307, dataSize: 1, dataType: -1, label: "HPS operation" }
-    - { mode: 1, registryID: 0xA0, offset: 12, ConversionID: 306, dataSize: 1, dataType: -1, label: "Safeguard operation" }
-    - { mode: 1, registryID: 0xA0, offset: 12, ConversionID: 305, dataSize: 1, dataType: -1, label: "Crank case heater (I/U)" }
-    - { mode: 1, registryID: 0xA0, offset: 12, ConversionID: 304, dataSize: 1, dataType: -1, label: "Solenoid Valve 3" }
-    - { mode: 1, registryID: 0xA0, offset: 12, ConversionID: 303, dataSize: 1, dataType: -1, label: "SV (drain pan heater) (I/U)" }
-    - { mode: 1, registryID: 0xA0, offset: 12, ConversionID: 302, dataSize: 1, dataType: -1, label: "Solenoid Valve 1" }
-    - { mode: 1, registryID: 0xA0, offset: 12, ConversionID: 301, dataSize: 1, dataType: -1, label: "4 way valve (Y1S)" }
-    - { mode: 1, registryID: 0xA0, offset: 12, ConversionID: 300, dataSize: 1, dataType: -1, label: "52C Output" }
-    - { mode: 1, registryID: 0xA0, offset: 13, ConversionID: 303, dataSize: 1, dataType: -1, label: "Discharge Temp. Drop (I/U)" }
-    - { mode: 1, registryID: 0xA0, offset: 13, ConversionID: 302, dataSize: 1, dataType: -1, label: "During emergency operation" }
-    - { mode: 1, registryID: 0xA0, offset: 13, ConversionID: 301, dataSize: 1, dataType: -1, label: "Indoor unit blowout 50 C flag" }
+    - { mode: 0, registryID: 0xA0, offset: 4, ConversionID: 119, dataSize: 2, dataType: 1, label: "Liquid pipe temp." }
+    - { mode: 0, registryID: 0xA0, offset: 6, ConversionID: 119, dataSize: 2, dataType: 2, label: "Pressure" }
+    - { mode: 0, registryID: 0xA0, offset: 8, ConversionID: 151, dataSize: 2, dataType: -1, label: "Expansion valve 3 (pls) (I/U)" }
+    - { mode: 0, registryID: 0xA0, offset: 10, ConversionID: 152, dataSize: 1, dataType: -1, label: "O/U MPU ID (I/U 1)" }
+    - { mode: 0, registryID: 0xA0, offset: 11, ConversionID: 152, dataSize: 1, dataType: -1, label: "O/U MPU ID (I/U 2)" }
+    - { mode: 0, registryID: 0xA0, offset: 12, ConversionID: 307, dataSize: 1, dataType: -1, label: "HPS operation" }
+    - { mode: 0, registryID: 0xA0, offset: 12, ConversionID: 306, dataSize: 1, dataType: -1, label: "Safeguard operation" }
+    - { mode: 0, registryID: 0xA0, offset: 12, ConversionID: 305, dataSize: 1, dataType: -1, label: "Crank case heater (I/U)" }
+    - { mode: 0, registryID: 0xA0, offset: 12, ConversionID: 304, dataSize: 1, dataType: -1, label: "Solenoid Valve 3" }
+    - { mode: 0, registryID: 0xA0, offset: 12, ConversionID: 303, dataSize: 1, dataType: -1, label: "SV (drain pan heater) (I/U)" }
+    - { mode: 0, registryID: 0xA0, offset: 12, ConversionID: 302, dataSize: 1, dataType: -1, label: "Solenoid Valve 1" }
+    - { mode: 0, registryID: 0xA0, offset: 12, ConversionID: 301, dataSize: 1, dataType: -1, label: "4 way valve (Y1S)" }
+    - { mode: 0, registryID: 0xA0, offset: 12, ConversionID: 300, dataSize: 1, dataType: -1, label: "52C Output" }
+    - { mode: 0, registryID: 0xA0, offset: 13, ConversionID: 303, dataSize: 1, dataType: -1, label: "Discharge Temp. Drop (I/U)" }
+    - { mode: 0, registryID: 0xA0, offset: 13, ConversionID: 302, dataSize: 1, dataType: -1, label: "During emergency operation" }
+    - { mode: 0, registryID: 0xA0, offset: 13, ConversionID: 301, dataSize: 1, dataType: -1, label: "Indoor unit blowout 50 C flag" }
     - { mode: 1, registryID: 0xA0, offset: 13, ConversionID: 300, dataSize: 1, dataType: -1, label: "Powerful bit (MT setting bit)" }
-    - { mode: 1, registryID: 0xA0, offset: 14, ConversionID: 105, dataSize: 2, dataType: 1, label: "Compressor port temperature" }
-    - { mode: 1, registryID: 0xA1, offset: 0, ConversionID: 119, dataSize: 2, dataType: 1, label: "(Raw data)Water heat exchanger inlet temp." }
-    - { mode: 1, registryID: 0xA1, offset: 2, ConversionID: 119, dataSize: 2, dataType: 1, label: "(Raw data)Water heat exchanger outlet temp." }
-    - { mode: 1, registryID: 0xA1, offset: 4, ConversionID: 302, dataSize: 1, dataType: -1, label: "Liquid INJ solenoid valve (Y4S)" }
-    - { mode: 1, registryID: 0xA1, offset: 4, ConversionID: 301, dataSize: 1, dataType: -1, label: "Bottom Plate Heater" }
-    - { mode: 1, registryID: 0xA1, offset: 4, ConversionID: 300, dataSize: 1, dataType: -1, label: "PHE Heater" }
-    - { mode: 1, registryID: 0xA1, offset: 5, ConversionID: 114, dataSize: 2, dataType: 1, label: "Target Discharge Temp." }
-    - { mode: 1, registryID: 0xA1, offset: 7, ConversionID: 114, dataSize: 2, dataType: 1, label: "Target port temperature" }
-    - { mode: 1, registryID: 0xA1, offset: 9, ConversionID: 305, dataSize: 1, dataType: -1, label: "Monobloc setting" }
-    - { mode: 1, registryID: 0xA1, offset: 9, ConversionID: 304, dataSize: 1, dataType: -1, label: "Minichiller setting" }
-    - { mode: 1, registryID: 0xA1, offset: 9, ConversionID: 303, dataSize: 1, dataType: -1, label: "MT setting" }
-    - { mode: 1, registryID: 0xA1, offset: 9, ConversionID: 302, dataSize: 1, dataType: -1, label: "GSHP setting" }
-    - { mode: 1, registryID: 0xA1, offset: 9, ConversionID: 301, dataSize: 1, dataType: -1, label: "Hydro split setting" }
-    - { mode: 1, registryID: 0xA1, offset: 9, ConversionID: 300, dataSize: 1, dataType: -1, label: "Alterma LT setting" }
-    - { mode: 1, registryID: 0x60, offset: 0, ConversionID: 304, dataSize: 1, dataType: -1, label: "Data Enable/Disable (0x60)" }
-    - { mode: 1, registryID: 0x60, offset: 1, ConversionID: 152, dataSize: 1, dataType: -1, label: "Indoor Unit Address (0x60)" }
+    - { mode: 0, registryID: 0xA0, offset: 14, ConversionID: 105, dataSize: 2, dataType: 1, label: "Compressor port temperature" }
+    - { mode: 0, registryID: 0xA1, offset: 0, ConversionID: 119, dataSize: 2, dataType: 1, label: "(Raw data)Water heat exchanger inlet temp." }
+    - { mode: 0, registryID: 0xA1, offset: 2, ConversionID: 119, dataSize: 2, dataType: 1, label: "(Raw data)Water heat exchanger outlet temp." }
+    - { mode: 0, registryID: 0xA1, offset: 4, ConversionID: 302, dataSize: 1, dataType: -1, label: "Liquid INJ solenoid valve (Y4S)" }
+    - { mode: 0, registryID: 0xA1, offset: 4, ConversionID: 301, dataSize: 1, dataType: -1, label: "Bottom Plate Heater" }
+    - { mode: 0, registryID: 0xA1, offset: 4, ConversionID: 300, dataSize: 1, dataType: -1, label: "PHE Heater" }
+    - { mode: 0, registryID: 0xA1, offset: 5, ConversionID: 114, dataSize: 2, dataType: 1, label: "Target Discharge Temp." }
+    - { mode: 0, registryID: 0xA1, offset: 7, ConversionID: 114, dataSize: 2, dataType: 1, label: "Target port temperature" }
+    - { mode: 0, registryID: 0xA1, offset: 9, ConversionID: 305, dataSize: 1, dataType: -1, label: "Monobloc setting" }
+    - { mode: 0, registryID: 0xA1, offset: 9, ConversionID: 304, dataSize: 1, dataType: -1, label: "Minichiller setting" }
+    - { mode: 0, registryID: 0xA1, offset: 9, ConversionID: 303, dataSize: 1, dataType: -1, label: "MT setting" }
+    - { mode: 0, registryID: 0xA1, offset: 9, ConversionID: 302, dataSize: 1, dataType: -1, label: "GSHP setting" }
+    - { mode: 0, registryID: 0xA1, offset: 9, ConversionID: 301, dataSize: 1, dataType: -1, label: "Hydro split setting" }
+    - { mode: 0, registryID: 0xA1, offset: 9, ConversionID: 300, dataSize: 1, dataType: -1, label: "Alterma LT setting" }
+    - { mode: 0, registryID: 0x60, offset: 0, ConversionID: 304, dataSize: 1, dataType: -1, label: "Data Enable/Disable (0x60)" }
+    - { mode: 0, registryID: 0x60, offset: 1, ConversionID: 152, dataSize: 1, dataType: -1, label: "Indoor Unit Address (0x60)" }
     - { mode: 1, registryID: 0x60, offset: 2, ConversionID: 315, dataSize: 1, dataType: -1, label: "I/U operation mode" }
     - { mode: 1, registryID: 0x60, offset: 2, ConversionID: 303, dataSize: 1, dataType: -1, label: "Thermostat ON/OFF (I/U)" }
-    - { mode: 1, registryID: 0x60, offset: 2, ConversionID: 302, dataSize: 1, dataType: -1, label: "Freeze Protection" }
+    - { mode: 0, registryID: 0x60, offset: 2, ConversionID: 302, dataSize: 1, dataType: -1, label: "Freeze Protection" }
     - { mode: 1, registryID: 0x60, offset: 2, ConversionID: 301, dataSize: 1, dataType: -1, label: "Silent Mode" }
-    - { mode: 1, registryID: 0x60, offset: 2, ConversionID: 300, dataSize: 1, dataType: -1, label: "Freeze Protection for water piping" }
+    - { mode: 0, registryID: 0x60, offset: 2, ConversionID: 300, dataSize: 1, dataType: -1, label: "Freeze Protection for water piping" }
     - { mode: 1, registryID: 0x60, offset: 3, ConversionID: 204, dataSize: 1, dataType: -1, label: "Error Code (I/U)" }
-    - { mode: 1, registryID: 0x60, offset: 4, ConversionID: 152, dataSize: 1, dataType: -1, label: "Error detailed code" }
-    - { mode: 1, registryID: 0x60, offset: 5, ConversionID: 203, dataSize: 1, dataType: -1, label: "Error type (I/U)" }
-    - { mode: 1, registryID: 0x60, offset: 6, ConversionID: 219, dataSize: 1, dataType: -1, label: "I/U capacity code" }
+    - { mode: 0, registryID: 0x60, offset: 4, ConversionID: 152, dataSize: 1, dataType: -1, label: "Error detailed code" }
+    - { mode: 0, registryID: 0x60, offset: 5, ConversionID: 203, dataSize: 1, dataType: -1, label: "Error type (I/U)" }
+    - { mode: 0, registryID: 0x60, offset: 6, ConversionID: 219, dataSize: 1, dataType: -1, label: "I/U capacity code" }
     - { mode: 1, registryID: 0x60, offset: 7, ConversionID: 105, dataSize: 2, dataType: 1, label: "DHW setpoint" }
     - { mode: 1, registryID: 0x60, offset: 9, ConversionID: 105, dataSize: 2, dataType: 1, label: "LW setpoint (main)" }
-    - { mode: 1, registryID: 0x60, offset: 11, ConversionID: 307, dataSize: 1, dataType: -1, label: "Water flow switch" }
+    - { mode: 0, registryID: 0x60, offset: 11, ConversionID: 307, dataSize: 1, dataType: -1, label: "Water flow switch" }
     - { mode: 1, registryID: 0x60, offset: 11, ConversionID: 306, dataSize: 1, dataType: -1, label: "Thermal protector (Q1L) BUH" }
-    - { mode: 1, registryID: 0x60, offset: 11, ConversionID: 305, dataSize: 1, dataType: -1, label: "Thermal protector BSH" }
-    - { mode: 1, registryID: 0x60, offset: 11, ConversionID: 304, dataSize: 1, dataType: -1, label: "Benefit kWh rate power supply" }
-    - { mode: 1, registryID: 0x60, offset: 11, ConversionID: 303, dataSize: 1, dataType: -1, label: "Solar input" }
+    - { mode: 0, registryID: 0x60, offset: 11, ConversionID: 305, dataSize: 1, dataType: -1, label: "Thermal protector BSH" }
+    - { mode: 0, registryID: 0x60, offset: 11, ConversionID: 304, dataSize: 1, dataType: -1, label: "Benefit kWh rate power supply" }
+    - { mode: 0, registryID: 0x60, offset: 11, ConversionID: 303, dataSize: 1, dataType: -1, label: "Solar input" }
     - { mode: 1, registryID: 0x60, offset: 11, ConversionID: 302, dataSize: 1, dataType: -1, label: "SmartGridContact2" }
     - { mode: 1, registryID: 0x60, offset: 11, ConversionID: 301, dataSize: 1, dataType: -1, label: "SmartGridContact1" }
-    - { mode: 1, registryID: 0x60, offset: 11, ConversionID: 300, dataSize: 1, dataType: -1, label: "Bivalent Operation" }
-    - { mode: 1, registryID: 0x60, offset: 12, ConversionID: 307, dataSize: 1, dataType: -1, label: "2way valve(On:Heat_Off:Cool)" }
-    - { mode: 1, registryID: 0x60, offset: 12, ConversionID: 306, dataSize: 1, dataType: -1, label: "3way valve(On:DHW_Off:Space)" }
-    - { mode: 1, registryID: 0x60, offset: 12, ConversionID: 305, dataSize: 1, dataType: -1, label: "BSH" }
+    - { mode: 0, registryID: 0x60, offset: 11, ConversionID: 300, dataSize: 1, dataType: -1, label: "Bivalent Operation" }
+    - { mode: 0, registryID: 0x60, offset: 12, ConversionID: 307, dataSize: 1, dataType: -1, label: "2way valve(On:Heat_Off:Cool)" }
+    - { mode: 0, registryID: 0x60, offset: 12, ConversionID: 306, dataSize: 1, dataType: -1, label: "3way valve(On:DHW_Off:Space)" }
+    - { mode: 0, registryID: 0x60, offset: 12, ConversionID: 305, dataSize: 1, dataType: -1, label: "BSH" }
     - { mode: 1, registryID: 0x60, offset: 12, ConversionID: 304, dataSize: 1, dataType: -1, label: "BUH Step1" }
     - { mode: 1, registryID: 0x60, offset: 12, ConversionID: 303, dataSize: 1, dataType: -1, label: "BUH Step2" }
-    - { mode: 1, registryID: 0x60, offset: 12, ConversionID: 302, dataSize: 1, dataType: -1, label: "Floor loop shut off valve" }
+    - { mode: 0, registryID: 0x60, offset: 12, ConversionID: 302, dataSize: 1, dataType: -1, label: "Floor loop shut off valve" }
     - { mode: 1, registryID: 0x60, offset: 12, ConversionID: 301, dataSize: 1, dataType: -1, label: "Water pump operation" }
-    - { mode: 1, registryID: 0x60, offset: 12, ConversionID: 300, dataSize: 1, dataType: -1, label: "Solar pump operation" }
-    - { mode: 1, registryID: 0x60, offset: 13, ConversionID: 152, dataSize: 1, dataType: -1, label: "Indoor Option Code" }
-    - { mode: 1, registryID: 0x60, offset: 15, ConversionID: 215, dataSize: 1, dataType: -1, label: "I/U Software ID (xx)" }
-    - { mode: 1, registryID: 0x60, offset: 14, ConversionID: 215, dataSize: 1, dataType: -1, label: "I/U Software ID (yy)" }
-    - { mode: 1, registryID: 0x60, offset: 16, ConversionID: 152, dataSize: 1, dataType: -1, label: "I/U EEPROM Ver." }
-    - { mode: 1, registryID: 0x61, offset: 0, ConversionID: 307, dataSize: 1, dataType: -1, label: "Data Enable/Disable (0x61)" }
-    - { mode: 1, registryID: 0x61, offset: 1, ConversionID: 152, dataSize: 1, dataType: -1, label: "Indoor Unit Address (0x61)" }
+    - { mode: 0, registryID: 0x60, offset: 12, ConversionID: 300, dataSize: 1, dataType: -1, label: "Solar pump operation" }
+    - { mode: 0, registryID: 0x60, offset: 13, ConversionID: 152, dataSize: 1, dataType: -1, label: "Indoor Option Code" }
+    - { mode: 0, registryID: 0x60, offset: 15, ConversionID: 215, dataSize: 1, dataType: -1, label: "I/U Software ID (xx)" }
+    - { mode: 0, registryID: 0x60, offset: 14, ConversionID: 215, dataSize: 1, dataType: -1, label: "I/U Software ID (yy)" }
+    - { mode: 0, registryID: 0x60, offset: 16, ConversionID: 152, dataSize: 1, dataType: -1, label: "I/U EEPROM Ver." }
+    - { mode: 0, registryID: 0x61, offset: 0, ConversionID: 307, dataSize: 1, dataType: -1, label: "Data Enable/Disable (0x61)" }
+    - { mode: 0, registryID: 0x61, offset: 1, ConversionID: 152, dataSize: 1, dataType: -1, label: "Indoor Unit Address (0x61)" }
     - { mode: 1, registryID: 0x61, offset: 2, ConversionID: 105, dataSize: 2, dataType: 1, label: "Leaving water temp. before BUH (R1T)" }
     - { mode: 1, registryID: 0x61, offset: 4, ConversionID: 105, dataSize: 2, dataType: 1, label: "Leaving water temp. after BUH (R2T)" }
     - { mode: 1, registryID: 0x61, offset: 6, ConversionID: 105, dataSize: 2, dataType: 1, label: "Refrig. Temp. liquid side (R3T)" }
     - { mode: 1, registryID: 0x61, offset: 8, ConversionID: 105, dataSize: 2, dataType: 1, label: "Inlet water temp.(R4T)" }
     - { mode: 1, registryID: 0x61, offset: 10, ConversionID: 105, dataSize: 2, dataType: 1, label: "DHW tank temp. (R5T)" }
-    - { mode: 1, registryID: 0x61, offset: 12, ConversionID: 105, dataSize: 2, dataType: 1, label: "Indoor ambient temp. (R1T)" }
-    - { mode: 1, registryID: 0x61, offset: 14, ConversionID: 105, dataSize: 2, dataType: 1, label: "Ext. indoor ambient sensor (R6T)" }
-    - { mode: 1, registryID: 0x62, offset: 0, ConversionID: 307, dataSize: 1, dataType: -1, label: "Data Enable/Disable (0x62)" }
-    - { mode: 1, registryID: 0x62, offset: 1, ConversionID: 152, dataSize: 1, dataType: -1, label: "Indoor Unit Address (0x62)" }
+    - { mode: 0, registryID: 0x61, offset: 12, ConversionID: 105, dataSize: 2, dataType: 1, label: "Indoor ambient temp. (R1T)" }
+    - { mode: 0, registryID: 0x61, offset: 14, ConversionID: 105, dataSize: 2, dataType: 1, label: "Ext. indoor ambient sensor (R6T)" }
+    - { mode: 0, registryID: 0x62, offset: 0, ConversionID: 307, dataSize: 1, dataType: -1, label: "Data Enable/Disable (0x62)" }
+    - { mode: 0, registryID: 0x62, offset: 1, ConversionID: 152, dataSize: 1, dataType: -1, label: "Indoor Unit Address (0x62)" }
     - { mode: 1, registryID: 0x62, offset: 2, ConversionID: 307, dataSize: 1, dataType: -1, label: "Reheat ON/OFF" }
-    - { mode: 1, registryID: 0x62, offset: 2, ConversionID: 306, dataSize: 1, dataType: -1, label: "Storage ECO ON/OFF" }
-    - { mode: 1, registryID: 0x62, offset: 2, ConversionID: 305, dataSize: 1, dataType: -1, label: "Storage comfort ON/OFF" }
+    - { mode: 0, registryID: 0x62, offset: 2, ConversionID: 306, dataSize: 1, dataType: -1, label: "Storage ECO ON/OFF" }
+    - { mode: 0, registryID: 0x62, offset: 2, ConversionID: 305, dataSize: 1, dataType: -1, label: "Storage comfort ON/OFF" }
     - { mode: 1, registryID: 0x62, offset: 2, ConversionID: 304, dataSize: 1, dataType: -1, label: "Powerful DHW Operation. ON/OFF" }
-    - { mode: 1, registryID: 0x62, offset: 2, ConversionID: 303, dataSize: 1, dataType: -1, label: "Space heating Operation ON/OFF" }
-    - { mode: 1, registryID: 0x62, offset: 2, ConversionID: 302, dataSize: 1, dataType: -1, label: "System OFF (ON:System off)" }
-    - { mode: 1, registryID: 0x62, offset: 2, ConversionID: 301, dataSize: 1, dataType: -1, label: "Not in use (0x62 o2)" }
-    - { mode: 1, registryID: 0x62, offset: 2, ConversionID: 300, dataSize: 1, dataType: -1, label: "Emergency (indoor) active/not active" }
+    - { mode: 0, registryID: 0x62, offset: 2, ConversionID: 303, dataSize: 1, dataType: -1, label: "Space heating Operation ON/OFF" }
+    - { mode: 0, registryID: 0x62, offset: 2, ConversionID: 302, dataSize: 1, dataType: -1, label: "System OFF (ON:System off)" }
+    - { mode: 0, registryID: 0x62, offset: 2, ConversionID: 301, dataSize: 1, dataType: -1, label: "Not in use (0x62 o2)" }
+    - { mode: 0, registryID: 0x62, offset: 2, ConversionID: 300, dataSize: 1, dataType: -1, label: "Emergency (indoor) active/not active" }
     - { mode: 1, registryID: 0x62, offset: 3, ConversionID: 105, dataSize: 2, dataType: 1, label: "LW setpoint (add)" }
-    - { mode: 1, registryID: 0x62, offset: 5, ConversionID: 105, dataSize: 2, dataType: 1, label: "RT setpoint" }
-    - { mode: 1, registryID: 0x62, offset: 7, ConversionID: 307, dataSize: 1, dataType: -1, label: "Add. Ext. RT Input Cool." }
-    - { mode: 1, registryID: 0x62, offset: 7, ConversionID: 306, dataSize: 1, dataType: -1, label: "Add. Ext. RT Input Heat." }
-    - { mode: 1, registryID: 0x62, offset: 7, ConversionID: 305, dataSize: 1, dataType: -1, label: "Main RT Cooling" }
-    - { mode: 1, registryID: 0x62, offset: 7, ConversionID: 304, dataSize: 1, dataType: -1, label: "Main RT Heating" }
-    - { mode: 1, registryID: 0x62, offset: 7, ConversionID: 303, dataSize: 1, dataType: -1, label: "Pwr consumption limit 4" }
-    - { mode: 1, registryID: 0x62, offset: 7, ConversionID: 302, dataSize: 1, dataType: -1, label: "Pwr consumption limit 3" }
-    - { mode: 1, registryID: 0x62, offset: 7, ConversionID: 301, dataSize: 1, dataType: -1, label: "Pwr consumption limit 2" }
-    - { mode: 1, registryID: 0x62, offset: 7, ConversionID: 300, dataSize: 1, dataType: -1, label: "Pwr consumption limit 1" }
-    - { mode: 1, registryID: 0x62, offset: 8, ConversionID: 307, dataSize: 1, dataType: -1, label: "None" }
-    - { mode: 1, registryID: 0x62, offset: 8, ConversionID: 306, dataSize: 1, dataType: -1, label: "Not in use (0x62 o8 b6)" }
-    - { mode: 1, registryID: 0x62, offset: 8, ConversionID: 305, dataSize: 1, dataType: -1, label: "Not in use (0x62 o8 b5)" }
-    - { mode: 1, registryID: 0x62, offset: 8, ConversionID: 304, dataSize: 1, dataType: -1, label: "PHE Heater (0x62)" }
-    - { mode: 1, registryID: 0x62, offset: 8, ConversionID: 303, dataSize: 1, dataType: -1, label: "Tank preheat ON/OFF" }
-    - { mode: 1, registryID: 0x62, offset: 8, ConversionID: 302, dataSize: 1, dataType: -1, label: "Circulation pump operation" }
-    - { mode: 1, registryID: 0x62, offset: 8, ConversionID: 301, dataSize: 1, dataType: -1, label: "Alarm output" }
-    - { mode: 1, registryID: 0x62, offset: 8, ConversionID: 300, dataSize: 1, dataType: -1, label: "Space H Operation output" }
-    - { mode: 1, registryID: 0x62, offset: 9, ConversionID: 105, dataSize: 2, dataType: -1, label: "Flow sensor (l/min)" }
+    - { mode: 0, registryID: 0x62, offset: 5, ConversionID: 105, dataSize: 2, dataType: 1, label: "RT setpoint" }
+    - { mode: 0, registryID: 0x62, offset: 7, ConversionID: 307, dataSize: 1, dataType: -1, label: "Add. Ext. RT Input Cool." }
+    - { mode: 0, registryID: 0x62, offset: 7, ConversionID: 306, dataSize: 1, dataType: -1, label: "Add. Ext. RT Input Heat." }
+    - { mode: 0, registryID: 0x62, offset: 7, ConversionID: 305, dataSize: 1, dataType: -1, label: "Main RT Cooling" }
+    - { mode: 0, registryID: 0x62, offset: 7, ConversionID: 304, dataSize: 1, dataType: -1, label: "Main RT Heating" }
+    - { mode: 0, registryID: 0x62, offset: 7, ConversionID: 303, dataSize: 1, dataType: -1, label: "Pwr consumption limit 4" }
+    - { mode: 0, registryID: 0x62, offset: 7, ConversionID: 302, dataSize: 1, dataType: -1, label: "Pwr consumption limit 3" }
+    - { mode: 0, registryID: 0x62, offset: 7, ConversionID: 301, dataSize: 1, dataType: -1, label: "Pwr consumption limit 2" }
+    - { mode: 0, registryID: 0x62, offset: 7, ConversionID: 300, dataSize: 1, dataType: -1, label: "Pwr consumption limit 1" }
+    - { mode: 0, registryID: 0x62, offset: 8, ConversionID: 307, dataSize: 1, dataType: -1, label: "None" }
+    - { mode: 0, registryID: 0x62, offset: 8, ConversionID: 306, dataSize: 1, dataType: -1, label: "Not in use (0x62 o8 b6)" }
+    - { mode: 0, registryID: 0x62, offset: 8, ConversionID: 305, dataSize: 1, dataType: -1, label: "Not in use (0x62 o8 b5)" }
+    - { mode: 0, registryID: 0x62, offset: 8, ConversionID: 304, dataSize: 1, dataType: -1, label: "PHE Heater (0x62)" }
+    - { mode: 0, registryID: 0x62, offset: 8, ConversionID: 303, dataSize: 1, dataType: -1, label: "Tank preheat ON/OFF" }
+    - { mode: 0, registryID: 0x62, offset: 8, ConversionID: 302, dataSize: 1, dataType: -1, label: "Circulation pump operation" }
+    - { mode: 0, registryID: 0x62, offset: 8, ConversionID: 301, dataSize: 1, dataType: -1, label: "Alarm output" }
+    - { mode: 0, registryID: 0x62, offset: 8, ConversionID: 300, dataSize: 1, dataType: -1, label: "Space H Operation output" }
+    - { mode: 0, registryID: 0x62, offset: 9, ConversionID: 105, dataSize: 2, dataType: -1, label: "Flow sensor (l/min)" }
     - { mode: 1, registryID: 0x62, offset: 11, ConversionID: 105, dataSize: 1, dataType: 1, label: "Water pressure", unit: "bar", device_class: "pressure" }
-    - { mode: 1, registryID: 0x62, offset: 12, ConversionID: 152, dataSize: 1, dataType: -1, label: "Water pump signal (0:max-100:stop)" }
-    - { mode: 1, registryID: 0x62, offset: 13, ConversionID: 152, dataSize: 1, dataType: -1, label: "[Future] 3 way Valve Mixing 1" }
-    - { mode: 1, registryID: 0x62, offset: 14, ConversionID: 152, dataSize: 1, dataType: -1, label: "[Future] 3 way Valve Mixing 2" }
+    - { mode: 0, registryID: 0x62, offset: 12, ConversionID: 152, dataSize: 1, dataType: -1, label: "Water pump signal (0:max-100:stop)" }
+    - { mode: 0, registryID: 0x62, offset: 13, ConversionID: 152, dataSize: 1, dataType: -1, label: "[Future] 3 way Valve Mixing 1" }
+    - { mode: 0, registryID: 0x62, offset: 14, ConversionID: 152, dataSize: 1, dataType: -1, label: "[Future] 3 way Valve Mixing 2" }
     - { mode: 1, registryID: 0x62, offset: 15, ConversionID: 105, dataSize: 2, dataType: 2, label: "Refrigerant pressure sensor" }
-    - { mode: 1, registryID: 0x62, offset: 15, ConversionID: 405, dataSize: 2, dataType: 1, label: "Pressure sensor(T)" }
-    - { mode: 1, registryID: 0x63, offset: 0, ConversionID: 307, dataSize: 1, dataType: -1, label: "Data Enable/Disable (0x63)" }
-    - { mode: 1, registryID: 0x63, offset: 1, ConversionID: 152, dataSize: 1, dataType: -1, label: "Indoor Unit Address (0x63)" }
-    - { mode: 1, registryID: 0x63, offset: 2, ConversionID: 215, dataSize: 1, dataType: -1, label: "I/U EEPROM (3rd digit)" }
-    - { mode: 1, registryID: 0x63, offset: 3, ConversionID: 215, dataSize: 1, dataType: -1, label: "I/U EEPROM (4th 5th digit)" }
-    - { mode: 1, registryID: 0x63, offset: 4, ConversionID: 215, dataSize: 1, dataType: -1, label: "I/U EEPROM (6th 7th digit)" }
-    - { mode: 1, registryID: 0x63, offset: 5, ConversionID: 215, dataSize: 1, dataType: -1, label: "I/U EEPROM (8th 9th digit)" }
-    - { mode: 1, registryID: 0x63, offset: 6, ConversionID: 215, dataSize: 1, dataType: -1, label: "I/U EEPROM (11th digit)" }
-    - { mode: 1, registryID: 0x63, offset: 7, ConversionID: 215, dataSize: 1, dataType: -1, label: "I/U EEPROM (12th digit)(rev.)" }
-    - { mode: 1, registryID: 0x63, offset: 8, ConversionID: 215, dataSize: 1, dataType: -1, label: "Not in use (0x63 o8)" }
-    - { mode: 1, registryID: 0x63, offset: 9, ConversionID: 215, dataSize: 1, dataType: -1, label: "Not in use (0x63 o9)" }
-    - { mode: 1, registryID: 0x63, offset: 10, ConversionID: 215, dataSize: 1, dataType: -1, label: "Not in use (0x63 o10)" }
-    - { mode: 1, registryID: 0x63, offset: 12, ConversionID: 301, dataSize: 1, dataType: -1, label: "[RT space thermo ON/OFF] (bit1)" }
-    - { mode: 1, registryID: 0x63, offset: 12, ConversionID: 300, dataSize: 1, dataType: -1, label: "[RT space thermo ON/OFF] (bit0)" }
-    - { mode: 1, registryID: 0x63, offset: 13, ConversionID: 311, dataSize: 1, dataType: -1, label: "BUH output capacity" }
-    - { mode: 1, registryID: 0x63, offset: 14, ConversionID: 161, dataSize: 1, dataType: 3, label: "Current measured by CT sensor of L1" }
-    - { mode: 1, registryID: 0x63, offset: 15, ConversionID: 161, dataSize: 1, dataType: 3, label: "Current measured by CT sensor of L2" }
-    - { mode: 1, registryID: 0x63, offset: 16, ConversionID: 307, dataSize: 1, dataType: -1, label: "HP Forced FG" }
-    - { mode: 1, registryID: 0x63, offset: 16, ConversionID: 161, dataSize: 1, dataType: 3, label: "Current measured by CT sensor of L3" }
-    - { mode: 1, registryID: 0x64, offset: 0, ConversionID: 307, dataSize: 1, dataType: -1, label: "Data Enable/Disable (0x64)" }
-    - { mode: 1, registryID: 0x64, offset: 1, ConversionID: 152, dataSize: 1, dataType: -1, label: "Indoor Unit Address (0x64)" }
-    - { mode: 1, registryID: 0x64, offset: 2, ConversionID: 316, dataSize: 1, dataType: -1, label: "Hybrid Op. Mode" }
-    - { mode: 1, registryID: 0x64, offset: 2, ConversionID: 303, dataSize: 1, dataType: -1, label: "Boiler Operation Demand" }
-    - { mode: 1, registryID: 0x64, offset: 2, ConversionID: 302, dataSize: 1, dataType: -1, label: "Boiler DHW Demand" }
-    - { mode: 1, registryID: 0x64, offset: 2, ConversionID: 301, dataSize: 1, dataType: -1, label: "Bypass Valve Output" }
-    - { mode: 1, registryID: 0x64, offset: 3, ConversionID: 105, dataSize: 2, dataType: -1, label: "BE_COP" }
-    - { mode: 1, registryID: 0x64, offset: 5, ConversionID: 105, dataSize: 2, dataType: 1, label: "Hybrid Heating Target Temp." }
-    - { mode: 1, registryID: 0x64, offset: 7, ConversionID: 105, dataSize: 2, dataType: 1, label: "Boiler Heating Target Temp." }
-    - { mode: 1, registryID: 0x64, offset: 9, ConversionID: 302, dataSize: 1, dataType: -1, label: "Add pump" }
-    - { mode: 1, registryID: 0x64, offset: 9, ConversionID: 301, dataSize: 1, dataType: -1, label: "Main pump" }
-    - { mode: 1, registryID: 0x64, offset: 10, ConversionID: 118, dataSize: 2, dataType: 1, label: "Mixed water temp." }
-    - { mode: 1, registryID: 0x64, offset: 12, ConversionID: 105, dataSize: 2, dataType: 1, label: "2nd Domestic hot water temperature" }
+    - { mode: 0, registryID: 0x62, offset: 15, ConversionID: 405, dataSize: 2, dataType: 1, label: "Pressure sensor(T)" }
+    - { mode: 0, registryID: 0x63, offset: 0, ConversionID: 307, dataSize: 1, dataType: -1, label: "Data Enable/Disable (0x63)" }
+    - { mode: 0, registryID: 0x63, offset: 1, ConversionID: 152, dataSize: 1, dataType: -1, label: "Indoor Unit Address (0x63)" }
+    - { mode: 0, registryID: 0x63, offset: 2, ConversionID: 215, dataSize: 1, dataType: -1, label: "I/U EEPROM (3rd digit)" }
+    - { mode: 0, registryID: 0x63, offset: 3, ConversionID: 215, dataSize: 1, dataType: -1, label: "I/U EEPROM (4th 5th digit)" }
+    - { mode: 0, registryID: 0x63, offset: 4, ConversionID: 215, dataSize: 1, dataType: -1, label: "I/U EEPROM (6th 7th digit)" }
+    - { mode: 0, registryID: 0x63, offset: 5, ConversionID: 215, dataSize: 1, dataType: -1, label: "I/U EEPROM (8th 9th digit)" }
+    - { mode: 0, registryID: 0x63, offset: 6, ConversionID: 215, dataSize: 1, dataType: -1, label: "I/U EEPROM (11th digit)" }
+    - { mode: 0, registryID: 0x63, offset: 7, ConversionID: 215, dataSize: 1, dataType: -1, label: "I/U EEPROM (12th digit)(rev.)" }
+    - { mode: 0, registryID: 0x63, offset: 8, ConversionID: 215, dataSize: 1, dataType: -1, label: "Not in use (0x63 o8)" }
+    - { mode: 0, registryID: 0x63, offset: 9, ConversionID: 215, dataSize: 1, dataType: -1, label: "Not in use (0x63 o9)" }
+    - { mode: 0, registryID: 0x63, offset: 10, ConversionID: 215, dataSize: 1, dataType: -1, label: "Not in use (0x63 o10)" }
+    - { mode: 0, registryID: 0x63, offset: 12, ConversionID: 301, dataSize: 1, dataType: -1, label: "[RT space thermo ON/OFF] (bit1)" }
+    - { mode: 0, registryID: 0x63, offset: 12, ConversionID: 300, dataSize: 1, dataType: -1, label: "[RT space thermo ON/OFF] (bit0)" }
+    - { mode: 0, registryID: 0x63, offset: 13, ConversionID: 311, dataSize: 1, dataType: -1, label: "BUH output capacity" }
+    - { mode: 0, registryID: 0x63, offset: 14, ConversionID: 161, dataSize: 1, dataType: 3, label: "Current measured by CT sensor of L1" }
+    - { mode: 0, registryID: 0x63, offset: 15, ConversionID: 161, dataSize: 1, dataType: 3, label: "Current measured by CT sensor of L2" }
+    - { mode: 0, registryID: 0x63, offset: 16, ConversionID: 307, dataSize: 1, dataType: -1, label: "HP Forced FG" }
+    - { mode: 0, registryID: 0x63, offset: 16, ConversionID: 161, dataSize: 1, dataType: 3, label: "Current measured by CT sensor of L3" }
+    - { mode: 0, registryID: 0x64, offset: 0, ConversionID: 307, dataSize: 1, dataType: -1, label: "Data Enable/Disable (0x64)" }
+    - { mode: 0, registryID: 0x64, offset: 1, ConversionID: 152, dataSize: 1, dataType: -1, label: "Indoor Unit Address (0x64)" }
+    - { mode: 0, registryID: 0x64, offset: 2, ConversionID: 316, dataSize: 1, dataType: -1, label: "Hybrid Op. Mode" }
+    - { mode: 0, registryID: 0x64, offset: 2, ConversionID: 303, dataSize: 1, dataType: -1, label: "Boiler Operation Demand" }
+    - { mode: 0, registryID: 0x64, offset: 2, ConversionID: 302, dataSize: 1, dataType: -1, label: "Boiler DHW Demand" }
+    - { mode: 0, registryID: 0x64, offset: 2, ConversionID: 301, dataSize: 1, dataType: -1, label: "Bypass Valve Output" }
+    - { mode: 0, registryID: 0x64, offset: 3, ConversionID: 105, dataSize: 2, dataType: -1, label: "BE_COP" }
+    - { mode: 0, registryID: 0x64, offset: 5, ConversionID: 105, dataSize: 2, dataType: 1, label: "Hybrid Heating Target Temp." }
+    - { mode: 0, registryID: 0x64, offset: 7, ConversionID: 105, dataSize: 2, dataType: 1, label: "Boiler Heating Target Temp." }
+    - { mode: 0, registryID: 0x64, offset: 9, ConversionID: 302, dataSize: 1, dataType: -1, label: "Add pump" }
+    - { mode: 0, registryID: 0x64, offset: 9, ConversionID: 301, dataSize: 1, dataType: -1, label: "Main pump" }
+    - { mode: 0, registryID: 0x64, offset: 10, ConversionID: 118, dataSize: 2, dataType: 1, label: "Mixed water temp." }
+    - { mode: 0, registryID: 0x64, offset: 12, ConversionID: 105, dataSize: 2, dataType: 1, label: "2nd Domestic hot water temperature" }
     - { mode: 1, registryID: 0x64, offset: 14, ConversionID: 152, dataSize: 1, dataType: 1, label: "Target delta T heating" }
     - { mode: 1, registryID: 0x64, offset: 15, ConversionID: 152, dataSize: 1, dataType: 1, label: "Target delta T cooling" }
