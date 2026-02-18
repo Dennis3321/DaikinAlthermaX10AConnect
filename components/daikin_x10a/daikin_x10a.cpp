@@ -114,7 +114,7 @@ void DaikinX10A::FetchRegisters() {
         continue;
       }
 
-      if (debug_mode_) ESP_LOGI("ESPoeDaikin", "MyDaikinPackage (%u): %s", (unsigned)MyDaikinPackage.size(), MyDaikinPackage.ToHexString().c_str());
+      if (debug_mode_) ESP_LOGI("ESPoeDaikin", "Register 0x%02X (%u bytes): %s", target_registry, (unsigned)MyDaikinPackage.size(), MyDaikinPackage.ToHexString().c_str());
       last_requested_registry_ = selectedRegister.registryID;
       this->process_frame_(MyDaikinPackage);
     } // if mode==1
@@ -224,8 +224,6 @@ void DaikinX10A::convert_registry_values_(const daikin_package &pkg, uint8_t reg
     if (need > pkg.size()) continue;
 
     const uint8_t *input = &pkg.buffer()[idx];
-    if (debug_mode_) ESP_LOGI("ESPoeDaikin", "  Processing %s: offset=%d, idx=%u, byte_at_idx=0x%02X",
-             reg.label, reg.offset, idx, pkg.buffer()[idx]);
     convert_one_(reg, input);
   }
 }
