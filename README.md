@@ -9,6 +9,8 @@
 * set the smartgrid feature from Home Assistant
 * native ESP Home
 
+<img width="914" height="894" alt="image" src="https://github.com/user-attachments/assets/eee96a59-9537-4aa6-b1d2-e4e799e02f61" />
+
 
 # Features; {#features;}
 
