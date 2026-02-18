@@ -138,6 +138,35 @@ sensor:
   - platform: uptime
     name: "Heat Pump Uptime"
 
+binary_sensor:
+  - platform: template
+    name: "Fan 1"
+    icon: mdi:fan
+    lambda: |-
+      std::string val = id(daikin_comp).get_register_value("Fan 1 (step)");
+      return val != "OFF" && !val.empty();
+
+  - platform: template
+    name: "Water pump"
+    icon: mdi:pump
+    lambda: |-
+      std::string val = id(daikin_comp).get_register_value("Water pump operation");
+      return val == "ON";
+
+  - platform: template
+    name: "BUH Step 1"
+    icon: mdi:heating-coil
+    lambda: |-
+      std::string val = id(daikin_comp).get_register_value("BUH Step1");
+      return val == "ON";
+
+  - platform: template
+    name: "BUH Step 2"
+    icon: mdi:heating-coil
+    lambda: |-
+      std::string val = id(daikin_comp).get_register_value("BUH Step2");
+      return val == "ON";
+
 # Register field reference:
 #   mode:       0 = read but don't expose to HA, 1 = read and auto-create sensor in HA
 #   registryID: X10A register address (e.g. 0x61). Each register is a block containing multiple values.
