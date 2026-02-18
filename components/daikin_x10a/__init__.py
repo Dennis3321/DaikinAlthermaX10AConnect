@@ -3,7 +3,7 @@ import esphome.codegen as cg
 import esphome.config_validation as cv
 from esphome.components import uart, sensor, text_sensor
 from esphome.const import (
-    CONF_ID, CONF_NAME, UNIT_CELSIUS,
+    CONF_ID, CONF_NAME, CONF_ICON, UNIT_CELSIUS,
     CONF_UNIT_OF_MEASUREMENT, CONF_DEVICE_CLASS,
     CONF_STATE_CLASS, CONF_ACCURACY_DECIMALS,
     CONF_DISABLED_BY_DEFAULT, CONF_FORCE_UPDATE,
@@ -34,6 +34,7 @@ REGISTER_SCHEMA = cv.Schema({
     cv.Optional("unit"): cv.string,
     cv.Optional("device_class"): cv.string,
     cv.Optional("accuracy_decimals"): cv.int_,
+    cv.Optional("icon"): cv.string,
 })
 
 daikin_x10a_ns = cg.esphome_ns.namespace("daikin_x10a")
@@ -113,6 +114,8 @@ async def to_code(config):
                         CONF_NAME: r["label"],
                         CONF_DISABLED_BY_DEFAULT: False,
                     }
+                    if "icon" in r:
+                        ts_config[CONF_ICON] = r["icon"]
                     await text_sensor.register_text_sensor(ts, ts_config)
                     cg.add(var.register_dynamic_text_sensor(r["label"], ts))
                 else:
@@ -160,6 +163,8 @@ async def to_code(config):
                         sensor_config[CONF_UNIT_OF_MEASUREMENT] = unit
                     if dev_class:
                         sensor_config[CONF_DEVICE_CLASS] = dev_class
+                    if "icon" in r:
+                        sensor_config[CONF_ICON] = r["icon"]
 
                     await sensor.register_sensor(sens, sensor_config)
                     cg.add(var.register_dynamic_sensor(r["label"], sens))

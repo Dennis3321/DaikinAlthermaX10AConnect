@@ -138,34 +138,6 @@ sensor:
   - platform: uptime
     name: "Heat Pump Uptime"
 
-binary_sensor:
-  - platform: template
-    name: "Fan 1"
-    icon: mdi:fan
-    lambda: |-
-      std::string val = id(daikin_comp).get_register_value("Fan 1 (step)");
-      return val != "OFF" && !val.empty();
-
-  - platform: template
-    name: "Water pump"
-    icon: mdi:pump
-    lambda: |-
-      std::string val = id(daikin_comp).get_register_value("Water pump operation");
-      return val == "ON";
-
-  - platform: template
-    name: "BUH Step 1"
-    icon: mdi:heating-coil
-    lambda: |-
-      std::string val = id(daikin_comp).get_register_value("BUH Step1");
-      return val == "ON";
-
-  - platform: template
-    name: "BUH Step 2"
-    icon: mdi:heating-coil
-    lambda: |-
-      std::string val = id(daikin_comp).get_register_value("BUH Step2");
-      return val == "ON";
 
 # Register field reference:
 #   mode:       0 = read but don't expose to HA, 1 = read and auto-create sensor in HA
@@ -253,7 +225,7 @@ daikin_x10a:
     - { mode: 0, registryID: 0x21, offset: 10, ConversionID: 105, dataSize: 2, dataType: 1, label: "Compressor outlet temperature" }
     - { mode: 0, registryID: 0x00, offset: 0, ConversionID: 995, dataSize: 1, dataType: -1, label: "NextDataGrid 2" }
     - { mode: 0, registryID: 0x30, offset: 0, ConversionID: 152, dataSize: 1, dataType: -1, label: "INV frequency (rps)" }
-    - { mode: 1, registryID: 0x30, offset: 1, ConversionID: 211, dataSize: 1, dataType: -1, label: "Fan 1 (step)" }
+    - { mode: 1, registryID: 0x30, offset: 1, ConversionID: 211, dataSize: 1, dataType: -1, label: "Fan 1 (step)", icon: "mdi:fan" }
     - { mode: 1, registryID: 0x30, offset: 2, ConversionID: 211, dataSize: 1, dataType: -1, label: "Fan 2 (step)" }
     - { mode: 0, registryID: 0x30, offset: 3, ConversionID: 151, dataSize: 2, dataType: -1, label: "Expansion valve 1 (pls)" }
     - { mode: 0, registryID: 0x30, offset: 5, ConversionID: 151, dataSize: 2, dataType: -1, label: "Expansion valve 2 (pls)" }
@@ -322,10 +294,10 @@ daikin_x10a:
     - { mode: 0, registryID: 0x60, offset: 12, ConversionID: 307, dataSize: 1, dataType: -1, label: "2way valve(On:Heat_Off:Cool)" }
     - { mode: 0, registryID: 0x60, offset: 12, ConversionID: 306, dataSize: 1, dataType: -1, label: "3way valve(On:DHW_Off:Space)" }
     - { mode: 0, registryID: 0x60, offset: 12, ConversionID: 305, dataSize: 1, dataType: -1, label: "BSH" }
-    - { mode: 1, registryID: 0x60, offset: 12, ConversionID: 304, dataSize: 1, dataType: -1, label: "BUH Step1" }
-    - { mode: 1, registryID: 0x60, offset: 12, ConversionID: 303, dataSize: 1, dataType: -1, label: "BUH Step2" }
+    - { mode: 1, registryID: 0x60, offset: 12, ConversionID: 304, dataSize: 1, dataType: -1, label: "BUH Step1", icon: "mdi:heating-coil" }
+    - { mode: 1, registryID: 0x60, offset: 12, ConversionID: 303, dataSize: 1, dataType: -1, label: "BUH Step2", icon: "mdi:heating-coil" }
     - { mode: 0, registryID: 0x60, offset: 12, ConversionID: 302, dataSize: 1, dataType: -1, label: "Floor loop shut off valve" }
-    - { mode: 1, registryID: 0x60, offset: 12, ConversionID: 301, dataSize: 1, dataType: -1, label: "Water pump operation" }
+    - { mode: 1, registryID: 0x60, offset: 12, ConversionID: 301, dataSize: 1, dataType: -1, label: "Water pump operation", icon: "mdi:pump" }
     - { mode: 0, registryID: 0x60, offset: 12, ConversionID: 300, dataSize: 1, dataType: -1, label: "Solar pump operation" }
     - { mode: 0, registryID: 0x60, offset: 13, ConversionID: 152, dataSize: 1, dataType: -1, label: "Indoor Option Code" }
     - { mode: 0, registryID: 0x60, offset: 15, ConversionID: 215, dataSize: 1, dataType: -1, label: "I/U Software ID (xx)" }
