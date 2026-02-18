@@ -18,7 +18,7 @@ CONF_UART_ID = "uart_id"
 CONF_REGISTERS = "registers"
 
 # ConversionIDs that produce text output (based on convert_one_ in daikin_x10a.cpp)
-TEXT_CONVERSION_IDS = {200, 201, 203, 204, 211, 217, 300, 301, 302, 303, 304, 305, 306, 307, 315, 316}
+TEXT_CONVERSION_IDS = {200, 201, 203, 204, 211, 212, 217, 300, 301, 302, 303, 304, 305, 306, 307, 315, 316}
 
 # ConversionIDs that typically produce temperature values (×0.1, signed temp, etc.)
 TEMPERATURE_CONVERSION_IDS = {105, 107, 114, 118, 119, 405}

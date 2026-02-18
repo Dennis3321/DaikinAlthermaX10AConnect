@@ -225,8 +225,9 @@ daikin_x10a:
     - { mode: 0, registryID: 0x21, offset: 10, ConversionID: 105, dataSize: 2, dataType: 1, label: "Compressor outlet temperature" }
     - { mode: 0, registryID: 0x00, offset: 0, ConversionID: 995, dataSize: 1, dataType: -1, label: "NextDataGrid 2" }
     - { mode: 0, registryID: 0x30, offset: 0, ConversionID: 152, dataSize: 1, dataType: -1, label: "INV frequency (rps)" }
-    - { mode: 1, registryID: 0x30, offset: 1, ConversionID: 211, dataSize: 1, dataType: -1, label: "Fan 1 (step)", icon: "mdi:fan" }
-    - { mode: 1, registryID: 0x30, offset: 2, ConversionID: 211, dataSize: 1, dataType: -1, label: "Fan 2 (step)" }
+    - { mode: 0, registryID: 0x30, offset: 1, ConversionID: 211, dataSize: 1, dataType: -1, label: "Fan 1 (step) raw" }
+    - { mode: 1, registryID: 0x30, offset: 1, ConversionID: 212, dataSize: 1, dataType: -1, label: "Fan 1 (step)", icon: "mdi:fan" }
+    - { mode: 1, registryID: 0x30, offset: 2, ConversionID: 212, dataSize: 1, dataType: -1, label: "Fan 2 (step)" }
     - { mode: 0, registryID: 0x30, offset: 3, ConversionID: 151, dataSize: 2, dataType: -1, label: "Expansion valve 1 (pls)" }
     - { mode: 0, registryID: 0x30, offset: 5, ConversionID: 151, dataSize: 2, dataType: -1, label: "Expansion valve 2 (pls)" }
     - { mode: 0, registryID: 0x30, offset: 7, ConversionID: 151, dataSize: 2, dataType: -1, label: "Expansion valve 3 (pls)" }

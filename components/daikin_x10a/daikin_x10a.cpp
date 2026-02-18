@@ -441,6 +441,10 @@ void DaikinX10A::convert_one_(Register &def, const uint8_t *data) {
       dblData = (double)data[0];
       break;
 
+    case 212:
+      strcpy(def.asString, (data[0] != 0) ? "ON" : "OFF");
+      return;
+
     // pressure -> temp
     case 401: dblData = convertPress2Temp_((double)getSignedValue_(data, num, 0)); break;
     case 402: dblData = convertPress2Temp_((double)getSignedValue_(data, num, 1)); break;
