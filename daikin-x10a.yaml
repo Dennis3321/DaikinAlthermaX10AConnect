@@ -175,11 +175,11 @@ daikin_x10a:
     - { mode: 0, registryID: 0x00, offset: 10, ConversionID: 152, dataSize: 1, dataType: -1, label: "O/U MPU ID (xx)" }
     - { mode: 0, registryID: 0x00, offset: 11, ConversionID: 152, dataSize: 1, dataType: -1, label: "O/U MPU ID (yy)" }
     - { mode: 0, registryID: 0x00, offset: 12, ConversionID: 105, dataSize: 1, dataType: -1, label: "O/U capacity (kW)" }
-    - { mode: 1, registryID: 0x10, offset: 0, ConversionID: 217, dataSize: 1, dataType: -1, label: "Operation Mode" }
+    - { mode: 1, registryID: 0x10, offset: 0, ConversionID: 217, dataSize: 1, dataType: -1, label: "Operation Mode", icon: "mdi:heat-pump" }
     - { mode: 0, registryID: 0x10, offset: 1, ConversionID: 307, dataSize: 1, dataType: -1, label: "Thermostat ON/OFF" }
     - { mode: 0, registryID: 0x10, offset: 1, ConversionID: 306, dataSize: 1, dataType: -1, label: "Restart standby" }
     - { mode: 0, registryID: 0x10, offset: 1, ConversionID: 305, dataSize: 1, dataType: -1, label: "Startup Control" }
-    - { mode: 1, registryID: 0x10, offset: 1, ConversionID: 304, dataSize: 1, dataType: -1, label: "Defrost Operation" }
+    - { mode: 1, registryID: 0x10, offset: 1, ConversionID: 304, dataSize: 1, dataType: -1, label: "Defrost Operation", icon: "mdi:snowflake-melt" }
     - { mode: 0, registryID: 0x10, offset: 1, ConversionID: 303, dataSize: 1, dataType: -1, label: "Oil Return Operation" }
     - { mode: 0, registryID: 0x10, offset: 1, ConversionID: 302, dataSize: 1, dataType: -1, label: "Pressure equalizing operation" }
     - { mode: 0, registryID: 0x10, offset: 1, ConversionID: 301, dataSize: 1, dataType: -1, label: "Demand Signal" }
@@ -273,24 +273,24 @@ daikin_x10a:
     - { mode: 0, registryID: 0xA1, offset: 9, ConversionID: 300, dataSize: 1, dataType: -1, label: "Alterma LT setting" }
     - { mode: 0, registryID: 0x60, offset: 0, ConversionID: 304, dataSize: 1, dataType: -1, label: "Data Enable/Disable (0x60)" }
     - { mode: 0, registryID: 0x60, offset: 1, ConversionID: 152, dataSize: 1, dataType: -1, label: "Indoor Unit Address (0x60)" }
-    - { mode: 1, registryID: 0x60, offset: 2, ConversionID: 315, dataSize: 1, dataType: -1, label: "I/U operation mode" }
-    - { mode: 1, registryID: 0x60, offset: 2, ConversionID: 303, dataSize: 1, dataType: -1, label: "Thermostat ON/OFF (I/U)" }
+    - { mode: 1, registryID: 0x60, offset: 2, ConversionID: 315, dataSize: 1, dataType: -1, label: "I/U operation mode", icon: "mdi:heat-pump" }
+    - { mode: 1, registryID: 0x60, offset: 2, ConversionID: 303, dataSize: 1, dataType: -1, label: "Thermostat ON/OFF (I/U)", icon: "mdi:thermometer-low" }
     - { mode: 0, registryID: 0x60, offset: 2, ConversionID: 302, dataSize: 1, dataType: -1, label: "Freeze Protection" }
-    - { mode: 1, registryID: 0x60, offset: 2, ConversionID: 301, dataSize: 1, dataType: -1, label: "Silent Mode" }
+    - { mode: 1, registryID: 0x60, offset: 2, ConversionID: 301, dataSize: 1, dataType: -1, label: "Silent Mode", icon: "mdi:home-sound-in" }
     - { mode: 0, registryID: 0x60, offset: 2, ConversionID: 300, dataSize: 1, dataType: -1, label: "Freeze Protection for water piping" }
-    - { mode: 1, registryID: 0x60, offset: 3, ConversionID: 204, dataSize: 1, dataType: -1, label: "Error Code (I/U)" }
+    - { mode: 1, registryID: 0x60, offset: 3, ConversionID: 204, dataSize: 1, dataType: -1, label: "Error Code (I/U)", icon: "mdi:alert-circle" }
     - { mode: 0, registryID: 0x60, offset: 4, ConversionID: 152, dataSize: 1, dataType: -1, label: "Error detailed code" }
     - { mode: 0, registryID: 0x60, offset: 5, ConversionID: 203, dataSize: 1, dataType: -1, label: "Error type (I/U)" }
     - { mode: 0, registryID: 0x60, offset: 6, ConversionID: 219, dataSize: 1, dataType: -1, label: "I/U capacity code" }
-    - { mode: 1, registryID: 0x60, offset: 7, ConversionID: 105, dataSize: 2, dataType: 1, label: "DHW setpoint" }
+    - { mode: 1, registryID: 0x60, offset: 7, ConversionID: 105, dataSize: 2, dataType: 1, label: "DHW setpoint", icon: "mdi:heat-pump" }
     - { mode: 1, registryID: 0x60, offset: 9, ConversionID: 105, dataSize: 2, dataType: 1, label: "LW setpoint (main)" }
     - { mode: 0, registryID: 0x60, offset: 11, ConversionID: 307, dataSize: 1, dataType: -1, label: "Water flow switch" }
     - { mode: 1, registryID: 0x60, offset: 11, ConversionID: 306, dataSize: 1, dataType: -1, label: "Thermal protector (Q1L) BUH" }
     - { mode: 0, registryID: 0x60, offset: 11, ConversionID: 305, dataSize: 1, dataType: -1, label: "Thermal protector BSH" }
     - { mode: 0, registryID: 0x60, offset: 11, ConversionID: 304, dataSize: 1, dataType: -1, label: "Benefit kWh rate power supply" }
     - { mode: 0, registryID: 0x60, offset: 11, ConversionID: 303, dataSize: 1, dataType: -1, label: "Solar input" }
-    - { mode: 1, registryID: 0x60, offset: 11, ConversionID: 302, dataSize: 1, dataType: -1, label: "SmartGridContact2" }
-    - { mode: 1, registryID: 0x60, offset: 11, ConversionID: 301, dataSize: 1, dataType: -1, label: "SmartGridContact1" }
+    - { mode: 1, registryID: 0x60, offset: 11, ConversionID: 302, dataSize: 1, dataType: -1, label: "SmartGridContact2", icon: "mdi:transmission-tower" }
+    - { mode: 1, registryID: 0x60, offset: 11, ConversionID: 301, dataSize: 1, dataType: -1, label: "SmartGridContact1", icon: "mdi:transmission-tower" }
     - { mode: 0, registryID: 0x60, offset: 11, ConversionID: 300, dataSize: 1, dataType: -1, label: "Bivalent Operation" }
     - { mode: 0, registryID: 0x60, offset: 12, ConversionID: 307, dataSize: 1, dataType: -1, label: "2way valve(On:Heat_Off:Cool)" }
     - { mode: 0, registryID: 0x60, offset: 12, ConversionID: 306, dataSize: 1, dataType: -1, label: "3way valve(On:DHW_Off:Space)" }
@@ -310,7 +310,7 @@ daikin_x10a:
     - { mode: 1, registryID: 0x61, offset: 4, ConversionID: 105, dataSize: 2, dataType: 1, label: "Leaving water temp. after BUH (R2T)" }
     - { mode: 1, registryID: 0x61, offset: 6, ConversionID: 105, dataSize: 2, dataType: 1, label: "Refrig. Temp. liquid side (R3T)" }
     - { mode: 1, registryID: 0x61, offset: 8, ConversionID: 105, dataSize: 2, dataType: 1, label: "Inlet water temp.(R4T)" }
-    - { mode: 1, registryID: 0x61, offset: 10, ConversionID: 105, dataSize: 2, dataType: 1, label: "DHW tank temp. (R5T)" }
+    - { mode: 1, registryID: 0x61, offset: 10, ConversionID: 105, dataSize: 2, dataType: 1, label: "DHW tank temp. (R5T)", icon: "mdi:water-boiler" }
     - { mode: 0, registryID: 0x61, offset: 12, ConversionID: 105, dataSize: 2, dataType: 1, label: "Indoor ambient temp. (R1T)" }
     - { mode: 0, registryID: 0x61, offset: 14, ConversionID: 105, dataSize: 2, dataType: 1, label: "Ext. indoor ambient sensor (R6T)" }
     - { mode: 0, registryID: 0x62, offset: 0, ConversionID: 307, dataSize: 1, dataType: -1, label: "Data Enable/Disable (0x62)" }
@@ -379,5 +379,5 @@ daikin_x10a:
     - { mode: 0, registryID: 0x64, offset: 9, ConversionID: 301, dataSize: 1, dataType: -1, label: "Main pump" }
     - { mode: 0, registryID: 0x64, offset: 10, ConversionID: 118, dataSize: 2, dataType: 1, label: "Mixed water temp." }
     - { mode: 0, registryID: 0x64, offset: 12, ConversionID: 105, dataSize: 2, dataType: 1, label: "2nd Domestic hot water temperature" }
-    - { mode: 1, registryID: 0x64, offset: 14, ConversionID: 152, dataSize: 1, dataType: 1, label: "Target delta T heating" }
-    - { mode: 1, registryID: 0x64, offset: 15, ConversionID: 152, dataSize: 1, dataType: 1, label: "Target delta T cooling" }
+    - { mode: 1, registryID: 0x64, offset: 14, ConversionID: 152, dataSize: 1, dataType: 1, label: "Target delta T heating", icon: "mdi:delta" }
+    - { mode: 1, registryID: 0x64, offset: 15, ConversionID: 152, dataSize: 1, dataType: 1, label: "Target delta T cooling", icon: "mdi:delta" }
